@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviesta - Book Tickets</title>
+    <link rel="shortcut icon" type="x-icon" href="images/siteimage.jpeg" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/Ticket.css">
+</head>
+
+<body>
+    <div class="container booking-container">
+        <div class="text-center mt-5 mb-4">
+            <h1>Book Your Movie Tickets at <span class="highlight">Moviesta</span></h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Silver Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 ticket-category">
+                <div class="card text-center">
+                    <img src="/images/silver.jpeg" class="card-img-top" alt="Silver Class">
+                    <div class="card-body">
+                        <h5 class="card-title">Silver Class</h5>
+                        <p class="price">Price: ₹250</p>
+                        <div>
+                            <label for="silver-qty">Quantity:</label>
+                            <input type="number" id="silver-qty" class="form-control quantity-input" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bronze Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 ticket-category">
+                <div class="card text-center">
+                    <img src="/images/bronze.jpg" class="card-img-top" alt="Bronze Class">
+                    <div class="card-body">
+                        <h5 class="card-title">Bronze Class</h5>
+                        <p class="price">Price: ₹160</p>
+                        <div>
+                            <label for="bronze-qty">Quantity:</label>
+                            <input type="number" id="bronze-qty" class="form-control quantity-input" value="1" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gold Section -->
+            <div class="col-lg-3 col-md-6 col-sm-12 ticket-category">
+                <div class="card text-center">
+                    <img src="/images/gold.jpg" class="card-img-top" alt="Gold Class">
+                    <div class="card-body">
+                        <h5 class="card-title">Gold Class</h5>
+                        <p class="price">Price: ₹400</p>
+                        <div>
+                            <label for="gold-qty">Quantity:</label>
+                            <input type="number" id="gold-qty" class="form-control quantity-input" value="0" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Calculation Section -->
+        <div class="total-section text-center mt-5" style="margin-left: 570px;">
+            <h2>Total: ₹<span id="total-price">160</span></h2>
+           <a href="/payment"><button class="btn btn-primary mt-3" >Book Now</button></a> 
+        </div>
+    </div>
+
+    <script src="/Js/Ticket.js"></script>
+</body>
+
+</html>

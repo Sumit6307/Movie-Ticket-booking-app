@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="shortcut icon" type="x-icon" href="images/siteimage.jpeg" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+
+<body class="Payment">
+    <form action="/payment" method="post">
+        <div class="card-details card-align">
+            <h2>Card Details</h2>
+            <div class="card-payment card-style">
+                <div class="card-info">
+                    <h3 style="text-align: right; color: rgba(255, 255, 0,0.6);">VISA</h3>
+                    <i class="bi bi-person-vcard-fill" style="font-size: 40px; color: blue;"></i>
+                    <div class="card-number">
+                        <h3>----</h3>
+                        <h3>----</h3>
+                        <h3>----</h3>
+                    </div>
+                    <div class="card-more">
+                        <div class="owner">
+                            <h4>Card Owner</h4>
+                            <p>------</p>
+                        </div>
+                        <div class="expiry">
+                            <h4>Expiry</h4>
+                            <p>--/--</p>
+                        </div>
+                        <div class="cvv">
+                            <h4>CVV</h4>
+                            <p>--</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="card-warning"></h4>
+            <div class="main-payment">
+                <input type="text" placeholder="Card Holder Name" name="cardholder">
+                <input type="text" placeholder="Card Number" maxlength="12">
+                <div class="exp">
+                    <input type="date" placeholder="Expiry Date" style="color: white;" min="2018-01-01" max="2025-01-01">
+                    <input type="text" placeholder="CVV" maxlength="3">
+                </div>
+            </div>
+                <div class="button">
+                    <button>Proceed Now</button>
+                </div>
+            </form> 
+        </div>
+    </div>
+</body>
+
+<script src="/Js/payment.js"></script>
+
+</html>

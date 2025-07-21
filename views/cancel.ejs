@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Ticket - Moviesta</title>
+    <link rel="shortcut icon" type="x-icon" href="images/siteimage.jpeg" >
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/cancel.css">
+</head>
+<body style="background-color: rgb(70, 68, 68);">
+    <div class="container">
+        <div class="cancel-box">
+            <h1>Cancel Your Ticket</h1>
+            <p>Please enter the cardholder name to cancel your ticket</p>
+            <form action="/cancel" method="post">
+                <div class="input-field">
+                    <label for="cardholder">Cardholder Name</label>
+                    <input type="text" id="cardholder" name="cardholder" required placeholder="Enter cardholder name">
+                </div>
+                <button type="submit" class="cancel-btn">Cancel Ticket</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

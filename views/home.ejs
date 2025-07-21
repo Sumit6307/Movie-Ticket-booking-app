@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviesta | Book Your Tickets</title>
+    <link rel="shortcut icon" type="x-icon" href="images/siteimage.jpeg" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- header -->
+
+
+    <header>
+        <div class="logo">
+            <h1>Moviesta</h1>
+        </div>
+        <div class="search-bar">
+            <form action="#" method="get">
+                <div class="input-group">
+                    <input type="text" placeholder="Search for Movies, Events, Shows..." name="search" id="searchInput" />
+                    <select name="city" id="citySelect" onchange="updateSearchField()">
+                        <option value="">Select City</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Thane">Thane</option>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Ghaziabad">Ghaziabad</option>
+                        <option value="Ludhiana">Ludhiana</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Faridabad">Faridabad</option>
+                        <option value="Meerut">Meerut</option>
+                        <option value="Rajkot">Rajkot</option>
+                        <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+                        <option value="Vasai-Virar">Vasai-Virar</option>
+                        <option value="Varanasi">Varanasi</option>
+                        <option value="Srinagar">Srinagar</option>
+                        <option value="Aurangabad">Aurangabad</option>
+                        <option value="Dhanbad">Dhanbad</option>
+                        <option value="Amritsar">Amritsar</option>
+                        <option value="Navi Mumbai">Navi Mumbai</option>
+                        <option value="Allahabad">Allahabad</option>
+                        <option value="Howrah">Howrah</option>
+                        <option value="Ranchi">Ranchi</option>
+                        <option value="Gwalior">Gwalior</option>
+                        <option value="Jabalpur">Jabalpur</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Vijayawada">Vijayawada</option>
+                        <option value="Jodhpur">Jodhpur</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Raipur">Raipur</option>
+                        <option value="Kota">Kota</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Guwahati">Guwahati</option>
+                        <option value="Solapur">Solapur</option>
+                        <option value="Hubli-Dharwad">Hubli-Dharwad</option>
+                        <option value="Mysuru">Mysuru</option>
+                        <option value="Tiruchirappalli">Tiruchirappalli</option>
+                        <option value="Bareilly">Bareilly</option>
+                        <option value="Aligarh">Aligarh</option>
+                        <option value="Tiruppur">Tiruppur</option>
+                        <option value="Moradabad">Moradabad</option>
+                        <option value="Bhiwandi">Bhiwandi</option>
+                        <option value="Jalandhar">Jalandhar</option>
+                        <option value="Warangal">Warangal</option>
+                        <option value="Bhagalpur">Bhagalpur</option>
+                        <option value="Bhiwani">Bhiwani</option>
+                        <option value="Saharanpur">Saharanpur</option>
+                        <option value="Guntur">Guntur</option>
+                        <option value="Cuttack">Cuttack</option>
+                        <option value="Udaipur">Udaipur</option>
+                        <option value="Dehradun">Dehradun</option>
+                        <option value="Asansol">Asansol</option>
+                        <option value="Ajmer">Ajmer</option>
+                        <option value="Bikaner">Bikaner</option>
+                        <option value="Jamshedpur">Jamshedpur</option>
+                        <option value="Bhilai">Bhilai</option>
+                        <option value="Salem">Salem</option>
+                        <option value="Tirunelveli">Tirunelveli</option>
+                        <option value="Ujjain">Ujjain</option>
+                        <option value="Siliguri">Siliguri</option>
+                        <option value="Jhansi">Jhansi</option>
+                        <option value="Gorakhpur">Gorakhpur</option>
+                        <option value="Belgaum">Belgaum</option>
+                        <option value="Mangalore">Mangalore</option>
+                        <option value="Jammu">Jammu</option>
+                        <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                        <option value="Noida">Noida</option>
+                    </select>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="" >Movies</a></li>
+                <li><a href="#" id="events">Events</a></li>
+                <li><a href="#" id="movieslink">Shows</a></li>
+                <li><a href="#" id="offerssection">Offers</a></li>
+                <li><a href="/signup">Sign up</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- slider -->
+
+
+
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <img src="/images/arigitsingh.jpg" alt="Arijit singh">
+                <div class="caption">
+                    <h2>Arijit Singh</h2>
+                    <p>Live in Concert</p>
+                    <p>15 Sept | New Delhi</p>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide" id="slide2">
+                <img src="/images/armann.jpg" alt="Armann malik">
+                <div class="caption">
+                    <h2>Armaan Malik</h2>
+                    <p>Live in Concert</p>
+                    <p>20 Sept | Lucknow</p>
+                </div>
+            </div>
+            <!-- Additional Slides -->
+            <!-- Repeat similar structure for more slides -->
+            <div class="slide" id="slide2">
+                <img src="/images/jubin.png" alt="Jubin Nautiyal">
+                <div class="caption">
+                    <h2>Jubin Nautiyal</h2>
+                    <p>Live in Concert</p>
+                    <p>26 Sept | Noida</p>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <img src="/images/atif.jpg" alt="Another Event">
+                <div class="caption">
+                    <h2>Atif Aslam</h2>
+                    <p>Live in Concert</p>
+                    <p>30 Sept | Mumbai</p>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </div>
+
+<!-- card1 -->
+
+    <section class="recommended" id="recommended">
+        <h3><i class="fa fa-play" style="font-size:36px; color: aquamarine;"></i> Recommended Movies</h3>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <img src="/images/Stree-2-.webp" alt="Stree 2">
+                <div class="movie-info">
+                    <h4>Stree 2</h4>
+                    <p>Comedy/Horror</p>
+                    <span class="rating">8.9/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/thalapathy.webp" alt="Thalapathy is the G.O.A.T.">
+                <div class="movie-info">
+                    <h4>Thalapathy is the G.O.A.T.</h4>
+                    <p>Action/Drama</p>
+                    <span class="rating">8.5/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/pushpa2.png" alt="Pushpa 2">
+                <div class="movie-info">
+                    <h4>Pushpa 2</h4>
+                    <p>Action/Thriller</p>
+                    <span class="rating">8.2/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/barbie.avif" alt="Barbie">
+                <div class="movie-info">
+                    <h4>Barbie</h4>
+                    <p>Fantasy/Comedy</p>
+                    <span class="rating">7.4/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/jawan.webp" alt="Jawan">
+                <div class="movie-info">
+                    <h4>Jawan</h4>
+                    <p>Action/Drama</p>
+                    <span class="rating">8.1/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ADsection -->
+    <section>
+        <div class="newcard">
+            <div class="left">
+                <img src="/images/siteimage.jpeg" alt="Image">
+            </div>
+            <div class="middle">
+                <h1>Endless Entertainment Anytime. Anywhere!</h1>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- card2 -->
+
+
+    <section class="premieres">
+        <h3>Premieres</h3>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <img src="/images/openhiemer.jpeg" alt="Oppenheimer">
+                <div class="movie-info">
+                    <h4>Oppenheimer</h4>
+                    <p>Biography/Drama</p>
+                    <span class="rating">8.9/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/mission impossible.webp" alt="Mission Impossible: Dead Reckoning">
+                <div class="movie-info">
+                    <h4>Mission Impossible: Dead Reckoning</h4>
+                    <p>Action/Adventure</p>
+                    <span class="rating">8.0/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img class="blue-image" src="/images/blue.jpg" alt="Blue Beetle">
+                <div class="movie-info">
+                    <h4>Blue Beetle</h4>
+                    <p>Action/Adventure</p>
+                    <span class="rating">7.3/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/fastx.avif" alt="Fast X">
+                <div class="movie-info">
+                    <h4>Fast X</h4>
+                    <p>Action/Thriller</p>
+                    <span class="rating">6.8/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/flash.jpg" alt="The Flash">
+                <div class="movie-info">
+                    <h4>The Flash</h4>
+                    <p>Action/Fantasy</p>
+                    <span class="rating">7.0/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- card3 -->
+
+<section class="premieres" style="background-color: #2a2a3b;" id="Laughter">
+        <h3 style="color: white;">Laughter Therapy</h3>
+        <div class="movies-grid" >
+            <div class="movie-card">
+                <img src="/images/laughter1.jpg" alt="laughter1">
+                <div class="movie-info">
+                    <h4>Delhi</h4>
+                    <p>15Sept</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/laughter2.avif" alt="laughter2">
+                <div class="movie-info">
+                    <h4>9Oct</h4>
+                 <p>Kolkata</p>
+                 <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/laughter3.avif" alt="laughter3">
+                <div class="movie-info">
+                    <h4>4Oct</h4>
+                   <p>Mumbai</p>
+                   <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/laughter4.avif" alt="laughter4">
+                <div class="movie-info">
+                    <h4>30Sept</h4>
+                   <p>Lucknow</p>
+                   <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/laughter5.avif" alt="laughter5">
+                <div class="movie-info">
+                    <h4>10Sept</h4>
+                    <p>Prayagraj</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- card4 -->
+
+    <section class="premieres" id="popularevents">
+        <h3 >Popular Events</h3>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <img src="/images/event1.avif" alt="Event Image 1">
+                <div class="movie-info">
+                    <h4>Gurgaon</h4>
+                    <p>19 Sept</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/event2.avif" alt="Event Image 2">
+                <div class="movie-info">
+                    <h4>Hyderabad</h4>
+                    <p>15 Oct</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/event3.avif" alt="Event Image 3">
+                <div class="movie-info">
+                    <h4>Prayagraj</h4>
+                    <p>18 Oct</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/event4.avif" alt="Event Image 4">
+                <div class="movie-info">
+                    <h4>Bhopal</h4>
+                    <p>26 Sept</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="/images/event5.avif" alt="Event Image 5">
+                <div class="movie-info">
+                    <h4>Noida</h4>
+                    <p>19 Sept</p>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- card5 -->
+    <section class="premieres" id="offers" style="background-color: #2a2a3b;" >
+        <h3 style="color: white;">Offers</h3>
+        <div class="movies-grid">
+            <div class="movie-card">
+                <div class="image-wrapper">
+                    <img src="/images/offer1.jpg" alt="Offer Image 1">
+                    <div class="offer-tag">50% OFF</div>
+                </div>
+                <div class="movie-info">
+                    <span class="rating">8.5/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="image-wrapper">
+                    <img src="/images/offer2.jpg" alt="Offer Image 2">
+                    <div class="offer-tag">40% OFF</div>
+                </div>
+                <div class="movie-info">
+                    <span class="rating">8.3/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="image-wrapper">
+                    <img src="/images/offer3.jpg" alt="Offer Image 3">
+                    <div class="offer-tag">30% OFF</div>
+                </div>
+                <div class="movie-info">
+                    <span class="rating">7.9/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="image-wrapper">
+                    <img src="/images/offer4.jpg_large" alt="Offer Image 4">
+                    <div class="offer-tag">25% OFF</div>
+                </div>
+                <div class="movie-info">
+                    <span class="rating">8.8/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="image-wrapper">
+                    <img src="/images/offer5.jpg" alt="Offer Image 5">
+                    <div class="offer-tag">15% OFF</div>
+                </div>
+                <div class="movie-info">
+                    <span class="rating">9/10</span>
+                    <a href="/Ticket"><button class="book-ticket-btn">Book Ticket</button></a>
+                </div>
+            </div>
+        </div>
+        <a href="/cancel"><button class="book-ticket-btn"  style="margin-left: 1260px;margin-top: 40px;font-size:15px;width:150px;height:50px;">CancelTicket&rarr;</button></a>
+    </section>
+    
+
+    <!-- trending searches -->
+
+
+    <section class="trending-section">
+        <h3>Trending Searches Right Now</h3>
+        <div class="trending-grid">
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Stree+2+Sarkate+Ka+Aatank" target="_blank">Stree 2: Sarkate Ka Aatank</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Laila+Majnu+Movie" target="_blank">Laila Majnu</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Tumbbad+Movie" target="_blank">Tumbbad</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=UPT20+League+2024" target="_blank">(UPT20-2024) Uttar Pradesh T20 League</a>
+                <p>Sports</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Emergency+Movie" target="_blank">Emergency</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Thalapathy+is+the+GOAT+Movie" target="_blank">Thalapathy is the G.O.A.T.</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Veer+Zaara+Movie" target="_blank">Veer Zaara</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Rehnaa+Hai+Terre+Dil+Mein+Movie" target="_blank">Rehnaa Hai Terre Dil Mein</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Khel+Khel+Mein+Movie" target="_blank">Khel Khel Mein</a>
+                <p>Movies</p>
+            </div>
+            <div class="trending-card">
+                <a href="https://www.google.com/search?q=Pushpa+The+Rule+Part+2" target="_blank">Pushpa: The Rule - Part 2</a>
+                <p>Movies</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <ul class="footer-menu">
+                    <li><a href="/aboutus" class="footer-link">About us</a></li>
+                    <li><a href="/contact" id="events" class="footer-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2024 &nbsp;Moviesta. &nbsp;All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="/Js/script.js"></script>
+    
+</body>
+
+</html>

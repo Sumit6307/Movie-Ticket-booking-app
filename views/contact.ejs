@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Moviesta</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="shortcut icon" type="x-icon" href="images/siteimage.jpeg" >
+  <link rel="stylesheet" href="/css/contact.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Moviesta</h1>
+    </div>
+    <div class="search-bar">
+      <form action="#" method="get">
+        <div class="input-group">
+          <input type="text" placeholder="Search for Movies, Events, Shows..." name="search" id="searchInput" />
+          <select name="city" id="citySelect" onchange="updateSearchField()">
+            <option value="">Select City</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Surat">Surat</option>
+            <option value="Jaipur">Jaipur</option>
+            <option value="Lucknow">Lucknow</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+            <option value="Indore">Indore</option>
+            <option value="Thane">Thane</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Patna">Patna</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Ghaziabad">Ghaziabad</option>
+            <option value="Ludhiana">Ludhiana</option>
+            <option value="Agra">Agra</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Faridabad">Faridabad</option>
+            <option value="Meerut">Meerut</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Kalyan-Dombivli">Kalyan-Dombivli</option>
+            <option value="Vasai-Virar">Vasai-Virar</option>
+            <option value="Varanasi">Varanasi</option>
+            <option value="Srinagar">Srinagar</option>
+            <option value="Aurangabad">Aurangabad</option>
+            <option value="Dhanbad">Dhanbad</option>
+            <option value="Amritsar">Amritsar</option>
+            <option value="Navi Mumbai">Navi Mumbai</option>
+            <option value="Allahabad">Allahabad</option>
+            <option value="Howrah">Howrah</option>
+            <option value="Ranchi">Ranchi</option>
+            <option value="Gwalior">Gwalior</option>
+            <option value="Jabalpur">Jabalpur</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Vijayawada">Vijayawada</option>
+            <option value="Jodhpur">Jodhpur</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Raipur">Raipur</option>
+            <option value="Kota">Kota</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Guwahati">Guwahati</option>
+            <option value="Solapur">Solapur</option>
+            <option value="Hubli-Dharwad">Hubli-Dharwad</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Bareilly">Bareilly</option>
+            <option value="Aligarh">Aligarh</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Moradabad">Moradabad</option>
+            <option value="Bhiwandi">Bhiwandi</option>
+            <option value="Jalandhar">Jalandhar</option>
+            <option value="Warangal">Warangal</option>
+            <option value="Bhagalpur">Bhagalpur</option>
+            <option value="Bhiwani">Bhiwani</option>
+            <option value="Saharanpur">Saharanpur</option>
+            <option value="Guntur">Guntur</option>
+            <option value="Cuttack">Cuttack</option>
+            <option value="Udaipur">Udaipur</option>
+            <option value="Dehradun">Dehradun</option>
+            <option value="Asansol">Asansol</option>
+            <option value="Ajmer">Ajmer</option>
+            <option value="Bikaner">Bikaner</option>
+            <option value="Jamshedpur">Jamshedpur</option>
+            <option value="Bhilai">Bhilai</option>
+            <option value="Salem">Salem</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Ujjain">Ujjain</option>
+            <option value="Siliguri">Siliguri</option>
+            <option value="Jhansi">Jhansi</option>
+            <option value="Gorakhpur">Gorakhpur</option>
+            <option value="Belgaum">Belgaum</option>
+            <option value="Mangalore">Mangalore</option>
+            <option value="Jammu">Jammu</option>
+            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+            <option value="Noida">Noida</option>
+          </select>
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+      </form>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/aboutus">About us</a></li>
+        <li><a href="/signup">Sign up</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Header -->
+
+  <!-- Contact Information Section -->
+  <section class="contact-details">
+    <div class="container">
+      <h2 style="color: white;">Get in Touch</h2>
+      <div class="card-group">
+        <div class="card">
+          <i class="fa fa-phone"></i>
+          <h3>Call Us</h3>
+          <p>Questions or concerns? Call our 24/7 customer service line:</p>
+          <p><strong>1-700-Moviesta</strong></p>
+          <p>Available 24/7</p>
+          <button onclick="window.location.href='tel:+916388358299'" class="chat-button" id="newbtn">Call Now</button>
+
+        </div>
+
+        <div class="card">
+          <i class="fa fa-envelope"></i>
+          <h3>Email Us</h3>
+          <p>For detailed enquiries, please email us at:</p>
+          <p><strong>support@Moviesta.com</strong></p>
+          <p>We usually respond within 24 hours.</p>
+          <button onclick="window.location.href='mailto:support@Moviesta.com'" class="chat-button" id="newbtn">Email
+            Us</button>
+
+        </div>
+
+        <div class="card">
+          <i class="fa fa-map-marker"></i>
+          <h3>Visit Us</h3>
+          <p>Our office address:</p>
+          <p><strong>211011 Transport-Nagar,Prayagraj,India</strong></p>
+          <p>Monday to Friday: 9 AM -5 PM</p>
+        </div>
+
+        <div class="card">
+          <i class="fa fa-comments"></i>
+          <h3>Live Chat</h3>
+          <p>Live chat with us to get Updates.</p>
+          <p>Chat with our customer service representatives in real-time.</p>
+          <a href="/video" target="_blank" class="chat-button">Start Live Chat</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media Section -->
+  <!-- Social Media Section -->
+  <div class="social-media-wrapper">
+    <h2 style="color: white;">Connect with Us on Social Media</h2>
+    <div class="social-icons">
+      <a href="https://facebook.com/Moviesta" target="_blank" class="social-link" id="fb">
+        <i class="fab fa-facebook-f "></i>
+      </a>
+      <a href="https://twitter.com/Moviesta" target="_blank" class="social-link" id="twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com/Moviesta" target="_blank" class="social-link" id="insta">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://linkedin.com/company/Moviesta" target="_blank" class="social-link" id="lnd">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Support Categories Section -->
+  <section class="support-categories">
+    <div class="container">
+      <h2 style="color: white;">Support Categories</h2>
+      <p style="color: white;">If you need help, choose a support category below:</p>
+      <div class="card-group">
+        <div class="card" style="background-color:rgb(7, 249, 169);">
+          <h3>Booking Issues</h3>
+          <p>Need help with booking or payments? Contact us for assistance with ticket purchases, cancellations, or
+            payment issues.</p>
+        </div>
+
+        <div class="card" style="background-color:rgb(7, 249, 169);">
+          <h3>Technical Support</h3>
+          <p>Having trouble accessing the website or app? Our tech team can help resolve any issues you're experiencing.
+          </p>
+        </div>
+
+        <div class="card" style="background-color: rgb(7, 249, 169);">
+          <h3>Account Support</h3>
+          <p>Questions about your account? Get help with login issues, password resets, and managing your account
+            details.</p>
+        </div>
+
+        <div class="card" style="background-color: rgb(7, 249, 169);">
+          <h3>Show Information</h3>
+          <p>Want details on a particular movie or show? Contact us for information on schedules, availability, and
+            more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <div class="contact-form-wrapper">
+    <h2>Send Us a Message</h2>
+    <div class="contact-form-container">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <a href="/home"><button type="submit" class="btn-submit">Submit</button></a>
+      </form>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <section class="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>How do I book a movie or show ticket?</h3>
+        <p>Booking a ticket is simple! Browse through the available options, select your preferred time slot, seat, and
+          payment method, and confirm your booking. You’ll receive an e-ticket via email immediately.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What payment methods do you accept?</h3>
+        <p>We accept all major credit and debit cards, as well as PayPal, Apple Pay, and Google Wallet for quick and
+          secure transactions.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How do I cancel or modify my booking?</h3>
+        <p>You can cancel or modify your booking up to 2 hours before the showtime. To do so, simply log into your
+          Moviesta account, go to 'My Bookings,' and select the ticket you wish to modify or cancel. Additional charges
+          may apply.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I request a refund?</h3>
+        <p>Refunds are available for cancellations made within the allowed timeframe. For more details, refer to our <a
+            href="#">Refund Policy</a>.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you offer discounts for bulk bookings?</h3>
+        <p>Yes, we offer special discounts for bulk or group bookings. Contact our support team at
+          <strong>sales@Moviesta.com</strong> for more information on bulk offers and corporate packages.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Moviesta | All Rights Reserved</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Refund Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script>
+    function updateSearchField() {
+      const city = document.getElementById("citySelect").value;
+      const searchInput = document.getElementById("searchInput");
+      if (city) {
+        searchInput.value = city;
+      }
+    }
+  </script>
+
+  <script src="/Js/contact.js"></script>
+</body>
+
+</html>
